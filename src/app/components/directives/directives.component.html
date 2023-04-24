@@ -2,5 +2,6 @@
 
   <h2 [ngStyle]="{'font-size': size + 'px', 'font-family': font, color: color}">Testando diretivas de estilos / style</h2>
  <p [ngClass]="classe">Aqui</p>
- <p [ngClass]="underline">Aqui</p>
+ <p [ngStyle]="{'font-size': size + 'px', 'font-family': font, color: color}">{{"pipe" | uppercase}}</p>
+ <p [ngStyle]="{'font-size': size + 'px', 'font-family': font}">{{today | date: "fullDate"}}</p>
 </div>

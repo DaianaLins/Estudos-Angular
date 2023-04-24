@@ -12,4 +12,7 @@ export class DirectivesComponent {
 
   classe = ["greentile", "small-title"];
   underline = "underline-title";
+
+  today = new Date();
+
 }
