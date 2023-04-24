@@ -5,7 +5,9 @@
     <!-- ngFor pode ser com qualquer elemento ex: div, section -->
     <li *ngFor="let animal of animals">
       Nome: {{animal.name}} - Tipo: {{animal.type}}
+      <button (click)="showAge(animal)">Mostrar idade</button>
     </li>
+    <h3>{{animalDetails}}</h3>
   </ul>
 
 </div>
