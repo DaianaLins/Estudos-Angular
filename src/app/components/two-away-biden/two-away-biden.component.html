@@ -1,0 +1,11 @@
+<div class="class">
+  <h2>Two way data biding</h2>
+  <form>
+    <input type="text" [(ngModel)]="name" name="name" placeholder="Digite seu nome">
+    <input type="text" [(ngModel)]="sobrename" name="sobrename" placeholder="Digite seu sobrenome">
+    <input type="submit" value="Enviar">
+  </form>
+  <div *ngIf="name !== '' && sobrename !== ''">
+    <p>O nome é: {{name}} {{sobrename}}</p>
+  </div>
+</div>
